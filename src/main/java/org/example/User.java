@@ -1,6 +1,13 @@
 package org.example;
 
 public class User {
+    public int getScore(){
+        if(this instanceof Student){
+            return getScore();
+        }else{
+            return 0;
+        }
+    }
     private String name;
 
     public User(String name) {
