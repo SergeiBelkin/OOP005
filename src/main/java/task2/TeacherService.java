@@ -16,14 +16,19 @@ public class TeacherService implements UserService<Teacher>{
         return teachers;
     }
 
+    @Override
+    public void create(String name, int score, int age) {
+        Teacher teach = new Teacher(name, null, age);
 
-    public void create(String name,int score, int age) {
 
-    }
-
-
-    public void create(String name, String objectToTichen, int age) {
-        Teacher teachers = new Teacher(name, objectToTichen, age );
+        teachers.add(teach);
 
     }
+
+
+    public void create(String name, String objectToTeach, int age) {
+        Teacher teach = new Teacher(name, objectToTeach, age);
+        teachers.add(teach);
+    }
+
 }

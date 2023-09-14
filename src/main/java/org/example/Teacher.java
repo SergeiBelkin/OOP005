@@ -1,6 +1,7 @@
 package org.example;
 
 public class Teacher extends User{
+
     public int getAge() {
         return age;
     }

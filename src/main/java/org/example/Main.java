@@ -22,14 +22,14 @@ public class Main {
 //        System.out.println(list);
 //        list.sort(new UserComparator<User>());
 //        System.out.println(list);
-//        StudentService studentService = new StudentService();
-//        studentService.create("All", 12, 31);
-//        studentService.create("Laa", 31, 21);
-//        studentService.create("Baa", 22, 19);
-//        System.out.println(studentService.getAll());
+        StudentService studentService = new StudentService();
+        studentService.create("All", 12, 31);
+        studentService.create("Laa", 31, 21);
+        studentService.create("Baa", 22, 19);
+        System.out.println(studentService.getAll());
         TeacherService ts = new TeacherService();
-        ts.create("olo", 2,33);
-        ts.create("ruy", 1,47);
+        ts.create("olo", "bio", 33);
+        ts.create("ruy",2, 47);
         System.out.println(ts.getAll());
 
 
