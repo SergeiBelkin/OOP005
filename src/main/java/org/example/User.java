@@ -1,6 +1,6 @@
 package org.example;
 
-public class User {
+public abstract class User {
     public int getScore(){
         if(this instanceof Student){
             return getScore();

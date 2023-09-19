@@ -1,0 +1,14 @@
+Single responsibility principle
+классы Teacher и Student отвечают за создания своих видов объектов
+
+open close principle
+классы Teacher и Student наследуются от абстрактного класса user и расширяют его
+
+Liskov substitution principle
+классы Teacher и Student наследуются от абстрактного класса user и ипользуют единую переменную name
+
+Interface segregation principle
+UserView и UserService интерфейсы для различных действий с пользователями
+
+Depency Inversion principle
+UserView и UserService от интерфейсов наследуются классы StudentView,StudentService,TeacherView,TeacherService
